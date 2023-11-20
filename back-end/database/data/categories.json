@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "d4610ddc-87ae-11ee-b9d1-0242ac120002",
+      "name": "Amuse"
+    },
+    {
+      "id": "d461144e-87ae-11ee-b9d1-0242ac120002",
+      "name": "Starter"
+    },
+    {
+      "id": "d46115ac-87ae-11ee-b9d1-0242ac120002",
+      "name": "Main"
+    },
+    {
+      "id": "d4611746-87ae-11ee-b9d1-0242ac120002",
+      "name": "Dessert"
+    },
+    {
+      "id": "d461189a-87ae-11ee-b9d1-0242ac120002",
+      "name": "Drinks"
+    },
+    {
+      "id": "d4611a02-87ae-11ee-b9d1-0242ac120002",
+      "name": "Baking"
+    },
+    {
+      "id": "d4611b4c-87ae-11ee-b9d1-0242ac120002",
+      "name": "Patisserie"
+    },
+    {
+      "id": "d4611ca0-87ae-11ee-b9d1-0242ac120002",
+      "name": "Pasta"
+    },
+    {
+      "id": "d461202e-87ae-11ee-b9d1-0242ac120002",
+      "name": "Bread"
+    },
+    {
+      "id": "d46121a0-87ae-11ee-b9d1-0242ac120002",
+      "name": "Sauces"
+    },
+    {
+      "id": "d4612312-87ae-11ee-b9d1-0242ac120002",
+      "name": "Ice cream"
+    },
+    {
+      "id": "d46124fc-87ae-11ee-b9d1-0242ac120002",
+      "name": "Fermentation"
+    }
+  ]
+}
