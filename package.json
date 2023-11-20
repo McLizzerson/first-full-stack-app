@@ -4,6 +4,9 @@
   "type": "module",
   "description": "A project to mess around with a full-stack app",
   "main": "index.js",
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
