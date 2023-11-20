@@ -12,8 +12,35 @@ datasource db {
 }
 
 model Recipe {
-  id            String @id @default(uuid())
-  name          String
-  description   String
-  source        String
+  id                String @id @default(uuid())
+  name              String
+  description       String
+  ingredients       String @db.VarChar(600)
+  image             String @db.VarChar(255)
+  category          Category[]
+
+  source            Source @relation(fields: [sourceId], references: [id])
+  sourceId          String
+
+
+  @@index([sourceId])
 }
+
+model Category {
+  id              String @id @default(uuid())
+  name            String @unique
+  recipes         Recipe[]
+}
+model Source {
+  id              String @id @default(uuid())
+  restaurant      String?
+  book            String?
+  website         String?
+  chef_author     String
+
+  recipes         Recipe[]
+}
+
+
+
+
