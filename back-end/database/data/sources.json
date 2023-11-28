@@ -2,38 +2,45 @@
   "sources": [
     {
       "id": "fce08a22-87ad-11ee-b9d1-0242ac120002",
-      "restaurant": "Truffelaer",
-      "chef_author": "Sanders"
+      "name": "Truffelaer",
+      "type": "RESTAURANT",
+      "chef": "Sanders"
     },
     {
       "id": "00d5de0c-87ae-11ee-b9d1-0242ac120002",
-      "restaurant": "The Brand",
-      "chef_author": "Snelle Nel"
+      "name": "The Brand",
+      "type": "RESTAURANT",
+      "chef": "Snelle Nel"
     },
     {
       "id": "045450ae-87ae-11ee-b9d1-0242ac120002",
-      "restaurant": "Jiu.Nu",
-      "chef_author": "Rolf, Sanders, Ewah"
+      "name": "Jiu.Nu",
+      "type": "RESTAURANT",
+      "chef": "Rolf, Sanders, Ewah"
     },
     {
       "id": "0743c718-87ae-11ee-b9d1-0242ac120002",
-      "restaurant": "Radio Royaal",
-      "chef_author": "Lars"
+      "name": "Radio Royaal",
+      "type": "RESTAURANT",
+      "chef": "Lars"
     },
     {
       "id": "0af3e820-87ae-11ee-b9d1-0242ac120002",
-      "restaurant": "Trattoria Manca",
-      "chef_author": "Ciccio, Rico"
+      "name": "Trattoria Manca",
+      "type": "RESTAURANT",
+      "chef": "Ciccio, Rico"
     },
     {
       "id": "bfefb60a-87ae-11ee-b9d1-0242ac120002",
-      "website": "Allerhande",
-      "chef_author": "AH"
+      "name": "Allerhande",
+      "type": "WEBSITE",
+      "chef": "AH"
     },
     {
       "id": "c8a65920-87ae-11ee-b9d1-0242ac120002",
-      "book": "Home Made",
-      "chef_author": "Yvette van Boven"
+      "name": "Home Made",
+      "type": "BOOK",
+      "chef": "Yvette van Boven"
     }
   ]
 }
