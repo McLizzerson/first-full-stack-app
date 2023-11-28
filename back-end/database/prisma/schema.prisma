@@ -17,13 +17,11 @@ model Recipe {
   description       String
   ingredients       String @db.VarChar(600)
   image             String @db.VarChar(255)
-  category          Category[]
+  source            String
+  categories        Category[]
+  sourceRelation    Source @relation(fields: [source], references: [name])
 
-  source            Source @relation(fields: [sourceId], references: [id])
-  sourceId          String
-
-
-  @@index([sourceId])
+  @@index([source])
 }
 
 model Category {
@@ -33,14 +31,18 @@ model Category {
 }
 model Source {
   id              String @id @default(uuid())
-  restaurant      String?
-  book            String?
-  website         String?
-  chef_author     String
+  name            String @unique
+  type            Type @default(RESTAURANT) 
+  chef            String
 
   recipes         Recipe[]
 }
 
+enum Type {
+  RESTAURANT
+  BOOK
+  WEBSITE 
+}
 
 
 
