@@ -1,7 +1,7 @@
 import express from "express";
 import "dotenv/config";
 
-import recipeRouter from "./back-end/src/routes/recipies.js";
+import recipeRouter from "./back-end/src/routes/recipes.js";
 
 const app = express();
 
