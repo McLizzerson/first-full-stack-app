@@ -29,7 +29,7 @@ recipeRouter.get("/:id", async (req, res, next) => {
 
 recipeRouter.post("/", async (req, res, next) => {
   try {
-    const { name, description, ingredients, image, source, categories } =
+    const { name, description, ingredients, image, source, category } =
       req.body;
     const recipeData = {
       name,
@@ -37,7 +37,7 @@ recipeRouter.post("/", async (req, res, next) => {
       ingredients,
       image,
       source,
-      categories,
+      category,
     };
     const newRecipe = await createRecipe(recipeData);
     res.status(201).json(newRecipe);
@@ -49,7 +49,7 @@ recipeRouter.post("/", async (req, res, next) => {
 recipeRouter.put("/:id", async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { name, description, ingredients, image, source, categories } =
+    const { name, description, ingredients, image, source, category } =
       req.body;
     const recipeData = {
       name,
@@ -57,7 +57,7 @@ recipeRouter.put("/:id", async (req, res, next) => {
       ingredients,
       image,
       source,
-      categories,
+      category,
     };
     const updatedRecipe = await updateRecipeById(id, recipeData);
     res.status(200).json(updatedRecipe);
@@ -70,11 +70,9 @@ recipeRouter.delete("/:id", async (req, res, next) => {
   try {
     const { id } = req.params;
     const deletedRecipe = await deleteRecipe(id);
-    res
-      .status(200)
-      .json({
-        message: `Recipe with id ${deletedRecipe} was deleted succesfully.`,
-      });
+    res.status(200).json({
+      message: `Recipe with id ${deletedRecipe} was deleted succesfully.`,
+    });
   } catch (error) {
     next(error);
   }

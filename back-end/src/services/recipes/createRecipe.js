@@ -10,11 +10,7 @@ const createRecipe = async (recipeData) => {
       ingredients: recipeData.ingredients,
       image: recipeData.image,
       source: recipeData.source,
-      categories: {
-        connect: recipeData.categories.map((category) => {
-          return { name: category };
-        }),
-      },
+      category: recipeData.category,
     },
   });
 };

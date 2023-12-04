@@ -3,10 +3,11 @@
     {
       "id": "d4610ddc-87ae-11ee-b9d1-0242ac120002",
       "name": "Sticky Toffee",
-      "description": "Vinnie's sticky toffee saus. Sssssht geheim!",
+      "description": "Basterd suiker met slagroom opkoken, van het vuur halen en boter erdoor roeren. (Denk ik)",
       "ingredients": "500g Basterd suiker bruin, 250g Boter, 375g Slagroom",
       "image": "none",
-      "source": "Truffelaer"
+      "source": "Truffelaer",
+      "category": "Dessert"
     }
   ]
 }

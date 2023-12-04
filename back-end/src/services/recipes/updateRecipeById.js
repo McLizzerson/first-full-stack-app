@@ -4,7 +4,7 @@ import { PrismaClient } from "@prisma/client";
 
 const updateRecipeById = async (id, recipeData) => {
   const prisma = new PrismaClient();
-  const { name, description, ingredients, image, source, categories } =
+  const { name, description, ingredients, image, source, category } =
     recipeData;
 
   const updatedRecipe = await prisma.recipe.updateMany({
@@ -12,17 +12,12 @@ const updateRecipeById = async (id, recipeData) => {
       id: id,
     },
     data: {
-      name,
-      description,
-      ingredients,
-      image,
-      source,
-      categories,
-      //   categories: {
-      //     set: categories.map((category) => {
-      //       return { name: category };
-      //     }),
-      //   },
+      name: name,
+      description: description,
+      ingredients: ingredients,
+      image: image,
+      source: source,
+      category: category,
     },
   });
 

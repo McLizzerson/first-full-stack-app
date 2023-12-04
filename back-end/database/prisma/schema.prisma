@@ -18,10 +18,12 @@ model Recipe {
   ingredients       String @db.VarChar(600)
   image             String @db.VarChar(255)
   source            String
-  categories        Category[]
+  category          String
+  categoryRelation  Category @relation(fields: [category], references: [name])
   sourceRelation    Source @relation(fields: [source], references: [name])
 
   @@index([source])
+  @@index([category])
 }
 
 model Category {
