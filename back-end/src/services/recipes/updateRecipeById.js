@@ -1,6 +1,7 @@
 // How to incoroporate an update of categories, not sure yet!
 
 import { PrismaClient } from "@prisma/client";
+import NotFoundError from "../../utils/notFoundError.js";
 
 const updateRecipeById = async (id, recipeData) => {
   const prisma = new PrismaClient();
@@ -22,7 +23,7 @@ const updateRecipeById = async (id, recipeData) => {
   });
 
   if (!updatedRecipe || updatedRecipe.count === 0) {
-    console.log(`Oh no, recipe with id${id} could not be found`);
+    throw new NotFoundError("recipe", id);
   }
 
   return {

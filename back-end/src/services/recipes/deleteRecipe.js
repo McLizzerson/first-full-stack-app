@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import NotFoundError from "../../utils/notFoundError.js";
 
 const deleteRecipe = async (id) => {
   const prisma = new PrismaClient();
@@ -10,7 +11,7 @@ const deleteRecipe = async (id) => {
   });
 
   if (!deletedRecipe || deletedRecipe.count === 0) {
-    console.log(`uh oh, recipe with id ${id} was not found`);
+    throw new NotFoundError("recipe", id);
   }
 
   return id;

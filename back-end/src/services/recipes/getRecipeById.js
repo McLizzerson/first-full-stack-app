@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+import NotFoundError from "../../utils/notFoundError.js";
 
 const getRecipeById = async (id) => {
   const prisma = new PrismaClient();
@@ -9,7 +10,7 @@ const getRecipeById = async (id) => {
     },
   });
   if (!uniqueRecipe) {
-    console.log(`Recipe with id ${id} cannot be found!`);
+    throw new NotFoundError("recipe", id);
   }
 
   return uniqueRecipe;
