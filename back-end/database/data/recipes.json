@@ -8,6 +8,24 @@
       "image": "none",
       "source": "Truffelaer",
       "category": "Dessert"
+    },
+    {
+      "id": "9afe1dda-9291-11ee-b9d1-0242ac120002",
+      "name": "Kiwi Schuim",
+      "description": "Coulis zeven, mengen met zout en room, in de kidde met 2 patronen",
+      "ingredients": "100g slagroom, 250 kiwi coulis, snufje zout",
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHcwwiVMfd8wRHeKZEOzyZAippM1Fj0eyLw7tbf56qieR81xH9ug9gbzE9KaQuv1Ww355mCG6rc0ngXlwckTnPvo0Z5lNJ8bSovvuQSrlAXAD-WbVonHGH3lZXsxJA0kKsNnR4-g9BpKraMBaebsmRjmZA=w1231-h923-s-no-gm?authuser=0",
+      "source": "Truffelaer",
+      "category": "Dessert"
+    },
+    {
+      "id": "9f61b756-9291-11ee-b9d1-0242ac120002",
+      "name": "Pistache Sabayon",
+      "description": "Alles au bain marie opkloppen tot 80 a 85C",
+      "ingredients": "150g eigeel, 150 suiker, 75g witte wijn, 75g pistache compound",
+      "image": "https://lh3.googleusercontent.com/pw/ADCreHehBjW9VYF3pQ7a0_mk27zXNavZSow9-B2BHt_2MFOGzAaONB9iZTDasQ701k7YjYO0wSQxGlFpPMBO3I-CqlokYc1MIQzitW7JswFb-41e_bVdRoX0tHwOVTkO0yPCwgYmn7AGgMQM9gozZ79DNTiAxA=w1231-h923-s-no-gm?authuser=0",
+      "source": "Truffelaer",
+      "category": "Dessert"
     }
   ]
 }
